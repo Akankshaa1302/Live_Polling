@@ -9,6 +9,7 @@ interface Student {
 
 interface Poll {
   id: string;
+  results: any;
   question: string;
   options: string[];
   timeLimit: number;

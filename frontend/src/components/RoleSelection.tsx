@@ -50,14 +50,14 @@ export const RoleSelection: React.FC<RoleSelectionProps> = ({ onRoleSelect }) =>
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            <Badge className="flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white border-none shadow-lg">
+            <span className="flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white border-none shadow-lg">
               <img
                 className="w-4 h-4"
                 alt="Vector"
                 src="/vector.svg"
               />
               <span className="font-semibold text-sm">Live Polling System</span>
-            </Badge>
+            </span>
           </motion.div>
 
           {/* Heading */}

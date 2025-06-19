@@ -26,7 +26,7 @@ export const StudentDashboard: React.FC = () => {
   } = useStore();
 
   const [selectedAnswer, setSelectedAnswer] = useState<string>("");
-  const [timer, setTimer] = useState<NodeJS.Timeout | null>(null);
+  const [timer, setTimer] = useState<number | null>(null);
 
   useEffect(() => {
     if (currentPoll && !hasAnswered && timeRemaining > 0) {
