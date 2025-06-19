@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "source": "./index.html",
+  "type": "module",
+  "name": "live-polling-system",
+  "description": "A comprehensive live polling system with React frontend and Socket.io backend",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "vite",
+    "server": "nodemon server/index.js",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "2.1.1",
+    "framer-motion": "^10.16.16",
+    "lucide-react": "^0.453.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.8.1",
+    "socket.io-client": "^4.7.5",
+    "tailwind-merge": "2.5.4",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0",
+    "@vitejs/plugin-react": "4.3.4",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "esbuild": "0.24.0",
+    "express": "^4.21.2",
+    "globals": "15.12.0",
+    "nodemon": "^3.0.2",
+    "socket.io": "^4.8.1",
+    "tailwindcss": "3.4.16",
+    "uuid": "^9.0.1",
+    "vite": "6.0.4"
+  },
+  "alias": {
+    "@/*": "./src/components/ui/$1"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
