@@ -88,7 +88,7 @@ export const useStore = create<AppState>((set, get) => ({
     const { socket: existingSocket } = get();
     if (existingSocket && existingSocket.connected) return;
 
-  const BACKEND_URL = import.meta.env.VITE_API_BASE_URL as string;
+  const BACKEND_URL = import.meta.env.VITE_API_BASE_URL;
 const socket = io(BACKEND_URL);
 
     socket.on('connect', () => {
